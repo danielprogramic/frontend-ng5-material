@@ -29,5 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Application code is in the folder ./src/app 
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](http://www.danielprogramic.com.br/Screen%20Shot%202018-07-26%20at%202.28.07%20AM.png)
 

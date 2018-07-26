@@ -1,0 +1,58 @@
+
+<mat-toolbar >
+  <mat-toolbar-row>
+    <span>{{title}}</span>
+
+    <span class="example-spacer"></span>
+    
+    <button mat-button >Expand All</button>
+    <button mat-button  >Collapse All</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-accordion >
+  <mat-expansion-panel *ngFor="let grandma of aGrandma"  (opened)="getMama(grandma.id)">
+    <mat-expansion-panel-header class="grandma">
+      <mat-panel-title class="title">
+          <i class="material-icons">
+              apps
+              </i>  Grandma  {{grandma.id}} 
+      </mat-panel-title>
+      <mat-panel-description class="title">
+        Name:  {{grandma.firstname}} &nbsp;/&nbsp; Age {{grandma.age}} 
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-accordion >
+        <mat-expansion-panel *ngFor="let mama of aMama" (opened)="getKid(mama.id)">
+          <mat-expansion-panel-header class="mama">
+            <mat-panel-title class="title">
+                <i class="material-icons">
+                    subdirectory_arrow_right
+                    </i>  Mama  {{mama.id}} 
+            </mat-panel-title>
+            <mat-panel-description class="title">
+              Name:  {{mama.firstname}} &nbsp;/&nbsp; Age {{mama.age}} 
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <mat-accordion>
+              <mat-expansion-panel *ngFor="let kid of aKid" >
+                <mat-expansion-panel-header class="kid">
+                  <mat-panel-title class="title">
+                      <i class="material-icons">
+                          subdirectory_arrow_right
+                          </i> Kid  {{kid.id}} 
+                  </mat-panel-title>
+                  <mat-panel-description class="title">
+                    Name:  {{kid.firstname}} &nbsp;/&nbsp; Age {{kid.age}} 
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+              </mat-expansion-panel>
+              <h5 *ngIf="aKid.length === 0" >No records found!</h5>
+            </mat-accordion>
+        </mat-expansion-panel>
+         <h5 *ngIf="aMama.length === 0" >No records found!</h5>
+      </mat-accordion>
+  </mat-expansion-panel>
+</mat-accordion>
+<h1 *ngIf="aGrandma.length === 0" >&nbsp;&nbsp;No records found!</h1>
+<router-outlet></router-outlet>

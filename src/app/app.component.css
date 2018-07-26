@@ -1,0 +1,29 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+.mat-expansion-panel-header.grandma,
+.mat-expansion-panel-header.grandma {
+  background: #03313D!important;
+  color: #fff !important;
+}
+
+.mat-expansion-panel-header.mama,
+.mat-expansion-panel-header.mama {
+  background: #07627F!important;
+  color: #fff !important;
+}
+
+.mat-expansion-panel-header.kid,
+.mat-expansion-panel-header.kid {
+  background: #0B9DCC!important;
+  color: #fff !important;
+}
+
+.title {
+  color: #fff !important;
+}

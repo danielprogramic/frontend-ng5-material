@@ -1,5 +1,7 @@
 # Frontend
 
+![alt text](http://www.danielprogramic.com.br/Screen%20Shot%202018-07-26%20at%202.28.07%20AM.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
@@ -29,5 +31,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Application code is in the folder ./src/app 
 
-![alt text](http://www.danielprogramic.com.br/Screen%20Shot%202018-07-26%20at%202.28.07%20AM.png)
+
 
